@@ -212,6 +212,15 @@ body:before{opacity:.2;background:linear-gradient(90deg,transparent calc(50% - 1
 
 .top-stack{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(170px,1fr);gap:10px;min-width:0}.top-stack .pool-card,.top-stack .match-status-card{height:100%;min-height:180px}.pool-card .meter,.pool-card .meter-label{display:flex!important}.pool-card .meter{display:block!important}.pool-card .meter-label{justify-content:space-between}.match-status-card{padding:14px;display:flex;flex-direction:column;justify-content:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow)}.status-head{display:flex;justify-content:space-between;align-items:baseline}.status-head h2{font:600 19px 'Newsreader';margin:0}.current-stats{font:8px/1.5 'JetBrains Mono',monospace;letter-spacing:.04em;color:var(--muted)}.match-status-card .lives{margin:0}.match-status-card .discipline-status{margin:0!important}
 @media(max-width:600px){.top-row{grid-template-columns:minmax(0,1fr) minmax(0,2fr)!important;flex-basis:160px!important;gap:6px}.top-row>.fact-trigger-card{height:160px!important;min-height:160px!important}.top-stack{display:flex;flex-direction:column;gap:5px}.top-stack .pool-card{flex:1;min-height:0;padding:7px 8px;grid-template-columns:1fr auto}.top-stack .match-status-card{flex:0 0 60px;min-height:60px;padding:5px 8px;display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:6px;row-gap:2px}.status-head h2{font-size:13px}.status-head .meta{display:none}.current-stats{font-size:7px;grid-column:1/-1;line-height:1.1}.match-status-card .lives{gap:3px}.match-status-card .discipline-status{gap:4px;min-height:18px!important}.top-stack .pool-num{font-size:21px}.pool-card .pool-sub{font-size:9px}.pool-card .meter-label{font-size:7px}.pool-card .meter{margin-top:3px}}
+
+@media(max-width:600px){
+  #gameScreen:not(.hidden){display:flex!important;flex:1 1 auto;flex-direction:column;min-height:0;height:0;overflow:hidden}
+  #gameScreen .layout{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;height:100%;overflow:hidden}
+  #gameScreen .game{display:flex;flex:1 1 auto;flex-direction:column;min-height:0;height:0;overflow:hidden}
+  #gameScreen .questions{display:flex;flex:1 1 0;flex-direction:column;min-height:0;height:100%;gap:7px;overflow:hidden}
+  #gameScreen .qbtn{display:flex;flex:1 1 0;min-height:54px;height:auto;width:100%;align-items:center;justify-content:center;padding:10px 12px}
+  #gameScreen .qtext{font-size:clamp(14px,4vw,18px);line-height:1.3}
+}
 </style></head>
 <body>
 <div class="wrap"><header class="topbar"><div class="brand">THE FOOTBALL <em>INTELLIGENCE</em> QUIZ</div><div class="issue">FIELD NOTES&nbsp; / &nbsp;NO. 042</div></header>
