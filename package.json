@@ -1,0 +1,8 @@
+{
+  "name": "am-idrogba",
+  "version": "1.0.0",
+  "description": "Am I ... Drogba? — A football player guessing game",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
